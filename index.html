@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ProjectRunspace.org - Maintenance</title>
+
+	<style>
+		:root {
+			--bg: #873636;
+			--panel: #ffffff;
+			--text: #0b0c10;
+			--accent: #93cf93;
+			--muted: #8b949e;
+			--border: #30363d;
+
+			--color-accent: #93cf93;
+			--color-cream-background: #f5f2e1;
+			--color-dark: #358235;
+			--color-dark-accent: #113611;
+			--color-dim-white: #b5b5b5;
+			--color-header-background: #222;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			font-family: Segoe UI, Arial, Helvetica, sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem;
+		}
+
+		.container {
+			max-width: 800px;
+			width: 100%;
+			background: var(--panel);
+			border: 1px solid var(--border);
+			border-radius: 12px;
+			padding: 3rem;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 0;
+			font-size: 2.5rem;
+			color: var(--accent);
+		}
+
+		.title-container {
+			font-family: monospace;
+			overflow: hidden;
+			padding: .5em;
+			background-color: var(--color-header-background);
+			border: 2px var(--color-accent) solid;
+		}
+
+		.maintitle {
+			font-size: 300%;
+			font-weight: bold;
+		}
+
+		.screenglow-green {
+			color: var(--color-accent);
+			text-shadow: 0 0 5px var(--color-dim-white), 0 0 10px var(--color-dark-accent), 0 0 42px var(--color-accent), 0 0 82px var(--color-accent), 0 0 92px var(--color-accent), 0 0 102px var(--color-accent);
+		}
+
+		.screenglow-white {
+			color: #fff;
+			text-shadow: 0 0 42px var(--color-dim-white), 0 0 82px var(--color-accent), 0 0 92px var(--color-accent), 0 0 102px var(--color-accent), 0 0 7px var(--color-dim-white), 0 0 10px var(--color-dim-white), 0 0 21px var(--color-dim-white);
+		}
+
+		.screenglow-negative {
+			color: #000;
+			text-shadow: 0 0 42px var(--color-dim-white), 0 0 82px var(--color-accent), 0 0 92px var(--color-accent), 0 0 102px var(--color-accent), 0 0 7px var(--color-dim-white), 0 0 10px var(--color-dim-white), 0 0 21px var(--color-dim-white);
+		}
+
+		.title-subcontainer {
+			font-family: monospace;
+			overflow: hidden;
+			padding: .5em;
+			background-color: var(--color-cream-background);
+			border-bottom: 1px var(--color-accent) solid;
+		}
+
+		.title-tagline {
+			font-size: 180%;
+			color: var(--color-dark);
+		}
+
+		.subtitle {
+			color: var(--muted);
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+		}
+
+		p {
+			line-height: 1.7;
+			font-size: 1.05rem;
+		}
+
+		.status {
+			margin: 2rem 0;
+			padding: 1rem;
+			border: 1px solid var(--border);
+			border-radius: 8px;
+			background: rgba(88, 166, 255, .08);
+		}
+
+		.footer {
+			margin-top: 2rem;
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+
+		a {
+			color: var(--accent);
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		@media (max-width: 700px) {
+			.container {
+				padding: 2rem;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="title-container">
+			<span class="maintitle">
+				<span class="screenglow-negative">></span><!--
+				--><span class="screenglow-green">Project </span>
+				<span class="screenglow-white">Runspace</span>
+			</span>
+		</div>
+
+		<div class="title-subcontainer">
+			<span class="title-tagline">
+				PS> Rebuilding infrastructure. Please wait...
+			</span>
+		</div>
+
+		<div class="subtitle">
+			Site Maintenance in Progress
+		</div>
+
+		<p>
+			ProjectRunspace.org is currently undergoing a major infrastructure
+			upgrade and website migration.
+		</p>
+
+		<div class="status">
+			We are migrating from our existing WordPress platform to a new,
+			Hugo-powered site while simultaneously rebuilding the server
+			infrastructure from the ground up.
+		</div>
+
+		<p>
+			This work is intended to improve site performance, reliability,
+			security, and long-term maintainability.
+		</p>
+
+		<p>
+			The site is expected to return soon. Thank you for your patience
+			while these upgrades are completed.
+		</p>
+
+		<div class="footer">
+			© 2026 ProjectRunspace.org<br><br>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
